@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+    
+    <!-- Bot Management Section -->
+    <div class="section">
+      <h2>Bot Management</h2>
+      <div>
+        Bot ID: <input type="text" id="botId" placeholder="Enter Bot ID">
+        <button onclick="editFile()">Edit File</button>
+        <button onclick="toggleBotStatus()">Toggle Bot Status</button>
+        <button onclick="changePrefix()">Change Prefix</button>
+      </div>
+    </div>
+    
+    <!-- File Manager Section -->
+    <div class="section">
+      <h2>File Manager</h2>
+      <div>
+        <button onclick="openFileManager()">Open File Manager</button>
+      </div>
+      <div id="fileManager" style="display:none;">
+        <button onclick="createFolder()">Create Folder</button>
+        <button onclick="uploadFile()">Upload File</button>
+        <input type="file" id="fileInput" style="display:none;" onchange="handleFileUpload()">
+        <ul id="fileList">
+          <!-- File list will be displayed here -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- User Authentication Section -->
+    <div class="section">
+      <h2>User Authentication</h2>
+      <div>
+        Password: <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+      </div>
+    </div>
+
+    <!-- Discord Bot Status Editing Section -->
+    <div class="section">
+      <h2>Discord Bot Status Editing</h2>
+      <div>
+        <button onclick="editBotStatus()">Edit Bot Status</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
