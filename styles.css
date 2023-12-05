@@ -1,0 +1,82 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="password"] {
+  margin-left: 5px;
+}
+
+#fileList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#fileList li {
+  margin: 5px;
+  padding: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#fileList button {
+  background-color: #d9534f;
+}
+
+#fileManager button {
+  margin: 5px;
+}
+
+#fileManager input {
+  margin: 5px;
+}
+
+#fileManager ul {
+  padding: 0;
+}
+
+#fileManager li {
+  margin: 5px;
+}
+
+#fileManager li button {
+  background-color: #d9534f;
+}
+
+#fileManager li:hover {
+  background-color: #777;
+}
