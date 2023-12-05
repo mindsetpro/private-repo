@@ -1,7 +1,7 @@
 // Add a list to store file and folder information
 let fileSystem = [
   { name: 'Folder 1', type: 'folder', children: [] },
-  { name: 'File 1.txt', type: 'file', content: 'This is the content of File 1.txt' },
+  { name: 'main.py', type: 'file', content: 'This is the content of File 1.txt' },
 ];
 
 function openFileManager() {
