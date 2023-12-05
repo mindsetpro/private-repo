@@ -53,6 +53,44 @@
         <button onclick="editBotStatus()">Edit Bot Status</button>
       </div>
     </div>
+
+    <!-- Bot Configuration Section -->
+    <div class="section">
+      <h2>Bot Configuration</h2>
+      <div>
+        <button onclick="configureBot()">Configure Bot</button>
+      </div>
+    </div>
+
+    <!-- File Editor Section -->
+    <div class="section">
+      <h2>File Editor</h2>
+      <div>
+        <button onclick="openFileEditor()">Open File Editor</button>
+      </div>
+      <div id="fileEditor" style="display:none;">
+        <textarea id="fileContent" rows="10" cols="50"></textarea>
+        <button onclick="saveFile()">Save File</button>
+      </div>
+    </div>
+
+    <!-- Embed/Message Sender Section -->
+    <div class="section">
+      <h2>Embed/Message Sender</h2>
+      <div>
+        <button onclick="sendEmbed()">Send Embed</button>
+        <button onclick="sendMessage()">Send Message</button>
+      </div>
+      <div id="embedSender" style="display:none;">
+        <!-- Add input fields for embed properties -->
+        <textarea id="embedContent" rows="10" cols="50" placeholder="Embed Content"></textarea>
+        <button onclick="sendEmbedMessage()">Send Embed</button>
+      </div>
+      <div id="messageSender" style="display:none;">
+        <textarea id="textContent" rows="5" cols="50" placeholder="Message Content"></textarea>
+        <button onclick="sendMessage()">Send Message</button>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
