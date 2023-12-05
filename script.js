@@ -87,3 +87,29 @@ function openFolder(index) {
   }
 }
 
+function editBotStatus() {
+  const botId = prompt('Enter Bot ID:');
+  if (!botId) {
+    alert('Bot ID is required.');
+    return;
+  }
+
+  const statusOptions = ['playing', 'streaming', 'listening', 'watching'];
+  const selectedStatus = prompt('Select Status: ' + statusOptions.join(', '));
+
+  if (!statusOptions.includes(selectedStatus)) {
+    alert('Invalid status option.');
+    return;
+  }
+
+  let statusText;
+  if (selectedStatus === 'streaming') {
+    const twitchUrl = prompt('Enter Twitch URL:');
+    statusText = `https://twitch.tv/${twitchUrl}`;
+  } else {
+    statusText = prompt(`Enter ${selectedStatus} status text:`);
+  }
+
+  // Simulate updating the bot's status
+  alert(`Setting status for Bot ID ${botId}: ${selectedStatus} - ${statusText}`);
+}
